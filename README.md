@@ -139,7 +139,7 @@ Reference Error
 //output = [1,2,3]
 var inp = [1,2,3,2];
 var x = [];
-for(let i=0;i<inp.length;i++){
+for(let i = 0; i < inp.length; i++){
   if(x.indexOf(inp[i]) == -1){
     x.push(inp[i]);
   }
