@@ -133,3 +133,16 @@ Output:
 Undefined
 Reference Error
 </pre>
+ # Question 10  - Remove duplicates from array
+  <pre>
+//input = [1,2,3,2]
+//output = [1,2,3]
+var inp = [1,2,3,2];
+var x = [];
+for(let i=0;i<inp.length;i++){
+  if(x.indexOf(inp[i]) == -1){
+    x.push(inp[i]);
+  }
+}
+console.log(x);
+</pre>
