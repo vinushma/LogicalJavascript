@@ -146,3 +146,20 @@ for(let i = 0; i < inp.length; i++){
 }
 console.log(x);
 </pre>
+ # Question 11  
+  <pre>
+method();
+function method(){
+console.log(abc);
+abc = 5;
+console.log(abc);
+}
+console.log(abc);
+var abc;
+
+Output:
+
+undefined
+5
+5
+</pre>
