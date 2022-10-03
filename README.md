@@ -163,3 +163,28 @@ undefined
 5
 5
 </pre>
+ # Question 11  - Sorting Numbers 
+  <pre>
+let numbers = [85, 83, 29, 70, 4, 0, 17, 8, 55];
+let x = numbers.sort((a, b) => a - b);
+console.log(x);
+
+Output:
+
+[
+   0,  4,  8, 17, 29,
+  55, 70, 83, 85
+]
+</pre>
+ <pre>
+let numbers = [85, 83, 29, 70, 4, 0, 17, 8, 55];
+let x = numbers.sort((a, b) => b - a);
+console.log(x);
+
+Output:
+
+[
+  85, 83, 70, 55, 29,
+  17,  8,  4,  0
+]
+</pre>
