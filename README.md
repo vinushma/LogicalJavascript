@@ -242,10 +242,37 @@ Output:
 # Question 15  - Array Splice
   <pre>
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.slice(1,2);
+console.log(x);
+
+Output:
+[ 'Orange']
+</pre>
+# Question 16  - Array Splice 
+  <pre>
+-  At position 2, add new items, and remove 1 item:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
 var x = fruits.splice(1,2);
 console.log(x);
 
 Output:
-[ 'Orange', 'Apple' ]
+[ 'Apple' ]
 </pre>
+  <pre>
+At position 2, add 2 elements:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(fruits);
 
+Output:
+[ 'Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango' ]
+</pre>
+  <pre>
+At position 2, remove 2 elements:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 2);
+console.log(fruits);
+
+Output:
+[ 'Banana', 'Orange' ]
+</pre>
