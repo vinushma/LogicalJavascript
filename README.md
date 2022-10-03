@@ -239,7 +239,7 @@ Output:
   { type: 'Saab', year: 2001 }
 ]
 </pre>
-# Question 15  - Array Splice
+# Question 15  - Array Slice
   <pre>
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 var x = fruits.slice(1,2);
