@@ -239,3 +239,13 @@ Output:
   { type: 'Saab', year: 2001 }
 ]
 </pre>
+# Question 15  - Array Splice
+  <pre>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.splice(1,2);
+console.log(x);
+
+Output:
+[ 'Orange', 'Apple' ]
+</pre>
+
