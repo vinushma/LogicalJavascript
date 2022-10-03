@@ -163,7 +163,7 @@ undefined
 5
 5
 </pre>
- # Question 12  - Sorting Numbers 
+ # Question 12  - Sorting Numbers - Array
   <pre>
 let numbers = [85, 83, 29, 70, 4, 0, 17, 8, 55];
 let x = numbers.sort((a, b) => a - b);
@@ -187,4 +187,22 @@ Output:
   85, 83, 70, 55, 29,
   17,  8,  4,  0
 ]
+</pre>
+# Question 13  - Find Max & Min number in an Array
+  <pre>
+let numbers = [85, 83, 29, 70, 4, 0, 17, 8, 55];
+let x = Math.max.apply(null, numbers);
+console.log(x);
+
+Output:
+85
+</pre>
+ <pre>
+let numbers = [85, 83, 29, 70, 4, 1, 17, 8, 55];
+let x = Math.min.apply(null, numbers);
+console.log(x);
+
+Output:
+
+1
 </pre>
