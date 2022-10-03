@@ -206,3 +206,36 @@ Output:
 
 1
 </pre>
+# Question 14  - Sorting Objects
+  <pre>
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+let x = cars.sort((a,b)=> a.year - b.year);
+console.log(x);
+
+Output:
+[
+  { type: 'Volvo', year: 2016 },
+  { type: 'BMW', year: 2010 },
+  { type: 'Saab', year: 2001 }
+]
+</pre>
+ <pre>
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+let x = cars.sort((a,b)=> b.year - a.year);
+console.log(x);
+
+Output:
+[
+  { type: 'Volvo', year: 2016 },
+  { type: 'BMW', year: 2010 },
+  { type: 'Saab', year: 2001 }
+]
+</pre>
