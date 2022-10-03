@@ -163,7 +163,7 @@ undefined
 5
 5
 </pre>
- # Question 11  - Sorting Numbers 
+ # Question 12  - Sorting Numbers 
   <pre>
 let numbers = [85, 83, 29, 70, 4, 0, 17, 8, 55];
 let x = numbers.sort((a, b) => a - b);
