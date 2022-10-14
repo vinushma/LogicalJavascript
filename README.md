@@ -187,6 +187,13 @@ Output:
   85, 83, 70, 55, 29,
   17,  8,  4,  0
 ]
+
+The sort method, fortunately, can sort negative, zero, and positive values in the correct order. When the sort( ) method compares two values, it sends the values to our compare function and sorts the values according to the returned value.
+
+If the result is negative, a is sorted before b.
+If the result is positive, b is sorted before a.
+If the result is 0, nothing changes.
+
 </pre>
 # Question 13  - Find Max & Min number in an Array
   <pre>
