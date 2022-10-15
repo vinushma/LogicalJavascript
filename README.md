@@ -302,3 +302,12 @@ Output:
 
 Error 
 </pre>
+# Question 19  - Comparing two objects can be done by stringify
+<pre>
+const k1 = { fruit: '🥝' };
+const k2 = { fruit: '🥝' };
+
+// Using JavaScript
+JSON.stringify(k1) === JSON.stringify(k2); // true
+
+</pre>
