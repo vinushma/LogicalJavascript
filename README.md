@@ -287,7 +287,18 @@ Output:
 <pre>
 let x = ["Sameer","Sagar", "Rahul", ["Vinushma"] ,"Sachin"]
 console.log(x.flat());
+
 Output:
 
 [ 'Sameer', 'Sagar', 'Rahul', 'Vinushma', 'Sachin' ]
+</pre>
+# Question 17  - Let - logical (Hoisting not applicable for Let & Const)
+<pre>
+a = 5;
+console.log(a); 
+let a
+
+Output:
+
+Error 
 </pre>
