@@ -283,3 +283,11 @@ console.log(fruits);
 Output:
 [ 'Banana', 'Orange' ]
 </pre>
+# Question 17  - Arrays FLAT
+<pre>
+let x = ["Sameer","Sagar", "Rahul", ["Vinushma"] ,"Sachin"]
+console.log(x.flat());
+Output:
+
+[ 'Sameer', 'Sagar', 'Rahul', 'Vinushma', 'Sachin' ]
+</pre>
