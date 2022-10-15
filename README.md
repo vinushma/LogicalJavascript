@@ -292,7 +292,7 @@ Output:
 
 [ 'Sameer', 'Sagar', 'Rahul', 'Vinushma', 'Sachin' ]
 </pre>
-# Question 17  - Let - logical (Hoisting not applicable for Let & Const)
+# Question 18  - Let - logical (Hoisting not applicable for Let & Const)
 <pre>
 a = 5;
 console.log(a); 
