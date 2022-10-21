@@ -320,14 +320,15 @@ let x = "my name is vinushma";
 let y = x.split(' ');
 let z = [y[0]];
 console.log(y);
-for(i=1;i<y.length;i++){
+for(let i=1;i<y.length;i++){
   let otp = y[i].charAt(0).toUpperCase();
   let otp1 = otp + y[i].slice(1);
   z.push(otp1);
-
 }
 console.log(z.join(''));
+
 Output:
 
-Error 
+[ 'my', 'name', 'is', 'vinushma' ]
+myNameIsVinushma
 </pre>
