@@ -332,3 +332,25 @@ Output:
 [ 'my', 'name', 'is', 'vinushma' ]
 myNameIsVinushma
 </pre>
+# Question 21  - Program to find the 2nd lagest number in the Array
+
+<pre>
+var x = [1,2,3,5,6,2,10,11,11,0];
+var y = [];
+for (let i=0; i < x.length; i++){
+	if(y.indexOf(x[i]) == -1){
+  y.push(x[i]);
+  }
+}
+//console.log(y);
+let z = y.sort((x,y) => x-y);
+let otp = z[z.length - 1]
+console.log(otp);
+
+Output:
+
+11
+</pre>
+
+
+
