@@ -381,4 +381,20 @@ Output:
 
 [ 1, 2, 3, 0, 5 ]
 </pre>
+# Question 23  - Remove Duplicates from the String using IndexOf
 
+<pre>
+var x = "onecompiler";
+var y = x.split('');
+var z = [];
+for (let i=0; i < x.length; i++){
+  if(z.indexOf(x[i]) == -1){
+    z.push(x[i]);
+  }
+}
+console.log(z.join(''));
+
+Output:
+
+onecmpilr
+</pre>
