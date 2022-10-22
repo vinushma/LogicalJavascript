@@ -351,6 +351,19 @@ Output:
 
 11
 </pre>
+# Question 22  - Remove Duplicates from the Array using Set Operator
 
+<pre>
+let x = [1,2,3,1,0,3,5,2];
+let z = new Set(x);
+let otp = Array.from(z);
+console.log(z);
+console.log(otp);
+
+Output:
+
+Set(5) { 1, 2, 3, 0, 5 }
+[ 1, 2, 3, 0, 5 ]
+</pre>
 
 
