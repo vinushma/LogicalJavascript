@@ -406,7 +406,7 @@ var y = x.split('');
 var z = [];
 var unique = [];
 var duplicates = [];
-for(let i=0;i<y.length;i++){
+for (let i=0; i < y.length; i++){
   if(z[y[i]]){
     z[y[i]] = z[y[i]] + 1;
     duplicates.push(y[i]);
