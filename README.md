@@ -365,5 +365,20 @@ Output:
 Set(5) { 1, 2, 3, 0, 5 }
 [ 1, 2, 3, 0, 5 ]
 </pre>
+# Question 23  - Remove Duplicates from the Array using IndexOf
 
+<pre>
+let x = [1,2,3,1,0,3,5,2];
+let y = [];
+for (let i=0; i < x.length; i++){
+  if(y.indexOf(x[i]) == -1){
+    y.push(x[i]);
+  }
+}
+console.log(y);
+
+Output:
+
+[ 1, 2, 3, 0, 5 ]
+</pre>
 
