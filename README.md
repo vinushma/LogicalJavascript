@@ -381,7 +381,7 @@ Output:
 
 [ 1, 2, 3, 0, 5 ]
 </pre>
-# Question 23  - Remove Duplicates from the String using IndexOf
+# Question 24  - Remove Duplicates from the String using IndexOf
 
 <pre>
 var x = "onecompiler";
@@ -397,4 +397,37 @@ console.log(z.join(''));
 Output:
 
 onecmpilr
+</pre>
+# Question 25  - Find Unique & dupliactes from the string
+
+<pre>
+var x = "onecompiler";
+var y = x.split('');
+var z = [];
+var unique = [];
+var duplicates = [];
+for(let i=0;i<y.length;i++){
+  if(z[y[i]]){
+    z[y[i]] = z[y[i]] + 1;
+    duplicates.push(y[i]);
+  }else{
+    z[y[i]] = 1;
+    unique.push(y[i]);
+  }
+}
+console.log(z);
+console.log(duplicates);
+console.log(unique.join(''));
+console.log(duplicates.join(''));
+
+Output:
+
+[
+  o: 2, n: 1, e: 2,
+  c: 1, m: 1, p: 1,
+  i: 1, l: 1, r: 1
+]
+[ 'o', 'e' ]
+onecmpilr
+oe
 </pre>
