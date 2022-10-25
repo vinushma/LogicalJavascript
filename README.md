@@ -431,3 +431,24 @@ Output:
 onecmpilr
 oe
 </pre>
+# Question 26  - sum(2)(3) and sum(2, 3) what is the common solution for both
+
+<pre>
+console.log(sum(1)(2));
+console.log(sum(1,2));
+function sum(a,b){
+  if(b == undefined)
+  {
+     return function (b)
+     {
+      return a+b;
+     }
+  }
+  return a+b;
+}
+
+Output:
+
+3
+3
+</pre>
