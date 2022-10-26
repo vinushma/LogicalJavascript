@@ -478,3 +478,31 @@ function checkAnagram(a,b){
 Output:
 String is Anagram
 </pre>
+# Question 28  - eval- Javascript
+
+<pre>
+var x = 10;
+var y = 20;
+var res = eval("x+y");
+console.log(res);
+
+Output:
+30
+</pre>
+# Question 29  - Oject related Logical question
+
+<pre>
+var myObject = {
+  price : 20,
+  get_Price : function (){
+    return this.price;
+  }
+}
+var custObj = Object.create(myObject);
+custObj.price = 19;
+delete custObj.price;
+console.log(custObj.get_Price());
+
+Output:
+20
+</pre>
