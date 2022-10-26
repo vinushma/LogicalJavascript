@@ -452,3 +452,29 @@ Output:
 3
 3
 </pre>
+# Question 27  - Two Strings Are Anagrams of Each Other, Input: SILENT, LISTEN
+//Create a function that takes in two strings as two parameters and returns a boolean that indicates whether or not the first string is an anagram of the second string.
+
+<pre>
+let x = "SILENT";
+let y = "LISTEN";
+let a = x.split('').sort();
+let b = y.split('').sort();
+checkAnagram(a,b);
+function checkAnagram(a,b){
+  if(a.length == b.length){
+    for(let i=0;i< a.length;i++){
+      if(a[i] != b[i]){
+        return console.log("Not Anagram");
+      }
+    }
+   return console.log("String is Anagram");
+  }else{
+    console.log("Not Anagram");
+  }
+}
+
+
+Output:
+String is Anagram
+</pre>
