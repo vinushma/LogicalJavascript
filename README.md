@@ -562,7 +562,7 @@ export interface test {
 # Question 33  - let x='123' parse to number;  
 
 <pre>
-parseInt("10");
+parseInt(x);
   
 Output:
-10
+123
