@@ -519,3 +519,23 @@ console.log(otp);
 Output:
 6
 </pre>
+# Question 31  - Extract values of first name and lastname to variables name1 and name2?   
+
+<pre>
+let employee = {
+    id: 1001,
+    name: {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+ };
+
+Answer:
+  let {firstName: name1,lastName: name2} = employee.name;
+  
+  console.log(name1);
+  console.log(name2);
+Output:
+John
+Doe
+</pre>
