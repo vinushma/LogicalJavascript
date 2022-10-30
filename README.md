@@ -535,7 +535,27 @@ Answer:
   
   console.log(name1);
   console.log(name2);
+  
 Output:
 John
 Doe
+</pre>
+# Question 32  - TypeScript - Interfaces with Optional Properties?   
+https://www.logicbig.com/tutorials/misc/typescript/interface-to-describe-object-with-optional-properties.html
+<pre>
+export interface test {
+  id:any;
+  name:any;
+  age:any;
+  nickname:any;
+}
+
+Answer:
+
+export interface test {
+  id:any;
+  name:any;
+  age:any;
+  nickname?:any;
+}
 </pre>
