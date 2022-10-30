@@ -566,6 +566,7 @@ parseInt(x);
   
 Output:
 123
+</pre>
 # Question 34  - Remove negative numbers from array
 
 <pre>
@@ -576,3 +577,4 @@ console.log(otp);
   
 Output:
 [ 0, 1, 5, 12, 19, 20 ]
+</pre>
