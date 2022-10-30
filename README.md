@@ -566,3 +566,13 @@ parseInt(x);
   
 Output:
 123
+# Question 34  - Remove negative numbers from array
+
+<pre>
+let numbers = [-23,-20,-17, -12, -5, 0, 1, 5, 12, 19, 20]; 
+let otp = numbers.filter((x,y)=> x > -1);
+
+console.log(otp);
+  
+Output:
+[ 0, 1, 5, 12, 19, 20 ]
