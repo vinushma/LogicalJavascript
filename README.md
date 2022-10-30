@@ -489,7 +489,7 @@ console.log(res);
 Output:
 30
 </pre>
-# Question 29  - Oject related Logical question
+# Question 29  - Object related Logical question
 
 <pre>
 var myObject = {
@@ -505,4 +505,17 @@ console.log(custObj.get_Price());
 
 Output:
 20
+</pre>
+# Question 30  - How will you pass numbers to function with elements of array numbers?   
+function sum(x,y,z) {
+  return x + y + z;
+}
+
+const numbers = [1, 2, 3];
+<pre>
+let otp = sum.apply(null,numbers);
+console.log(otp);
+
+Output:
+6
 </pre>
