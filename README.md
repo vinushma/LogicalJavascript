@@ -559,3 +559,10 @@ export interface test {
   nickname?:any;
 }
 </pre>
+# Question 33  - let x='123' parse to number;  
+
+<pre>
+parseInt("10");
+  
+Output:
+10
