@@ -584,7 +584,8 @@ Output:
 </pre>
 For Example: 
 <pre>
-For array {4, -9, -2, 6, -8}, the output will be {-9, 4, -2, 6, -8} For array {1, 2, 3, -5}, the output will be {-5, 1, 2, 3}
+For array {4, -9, -2, 6, -8}, the output will be {-9, 4, -2, 6, -8} 
+For array {1, 2, 3, -5}, the output will be {-5, 1, 2, 3}
 </pre>
 <pre>
 let x = [4, -9, -2, 6, -8];
