@@ -632,7 +632,7 @@ expected Array-9,4,-8,6,-2
 <pre>
 let x = ["A", "B", "C", "A", "A"];
 let y = [];
-for(let i=0; i<x.length;i++){
+for(let i=0; i< x.length;i++){
   if(y[x[i]]){
     y[x[i]] = y[x[i]] + 1;
   }else{
