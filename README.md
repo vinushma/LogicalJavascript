@@ -578,3 +578,51 @@ console.log(otp);
 Output:
 [ 0, 1, 5, 12, 19, 20 ]
 </pre>
+<pre>
+# Question 35  - The number of positive integers and negative integers may not be equal. In such cases, add the extra integers at the end.
+
+</pre>
+For Example: 
+<pre>
+For array {4, -9, -2, 6, -8}, the output will be {-9, 4, -2, 6, -8} For array {1, 2, 3, -5}, the output will be {-5, 1, 2, 3}
+</pre>
+<pre>
+let x = [4, -9, -2, 6, -8];
+console.log("Given Array = "+x);
+let y = x.sort((a,b)=> a-b);
+console.log("After Sorting = "+ y);
+
+let neg = [];
+let pos = [];
+let newArr = [];
+for(let i=0;i<x.length;i++){
+  if(x[i]>=0){
+    pos.push(x[i]);
+  }else{
+    neg.push(x[i]);
+  }
+}
+console.log(neg);
+console.log(pos);
+for(let i=0;i< neg.length;i++){
+  if(pos[i] && neg[i]){
+     newArr.push(neg[i]);
+     newArr.push(pos[i]);
+  }else if(neg[i] || pos[i]){
+    if(pos[i]){
+       newArr.push(pos[i]);
+    }
+     if(neg[i]){
+       newArr.push(neg[i]);
+    }
+  }
+}
+console.log("expected Array"+ newArr);
+  
+Output:
+Given Array = 4,-9,-2,6,-8
+After Sorting = -9,-8,-2,4,6
+[ -9, -8, -2 ]
+[ 4, 6 ]
+expected Array-9,4,-8,6,-2
+</pre>
