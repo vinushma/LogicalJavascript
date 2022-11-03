@@ -627,8 +627,7 @@ After Sorting = -9,-8,-2,4,6
 [ 4, 6 ]
 expected Array-9,4,-8,6,-2
 </pre>
-# Question 35  - In JavaScript, how would you count the number of each item
-in an array, such as ["A", "B", "C", "A", "A"].
+# Question 35  - In JavaScript, how would you count the number of each item in an array, such as ["A", "B", "C", "A", "A"].
   
 <pre>
 let x = ["A", "B", "C", "A", "A"];
