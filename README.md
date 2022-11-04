@@ -646,3 +646,28 @@ Output:
 
 [ A: 3, B: 1, C: 1 ]
 </pre>
+# Question 36  - Merge Arrays in JavaScript
+<pre>
+1. Immutable merge of arrays
+
+1.1 Merge using the spread operator
+
+// merge array1 and array2
+const mergeResult = [...array1, ...array2];
+
+1.2 Merge using array.concat() method
+
+// merge array1 and array2
+const mergeResult = array1.concat(array2);
+
+2. Mutable merge of arrays
+The merge performed using the spread operator or array.concat() creates a new array. However, sometimes you don't want to create a new array, but rather merge it into some existing array.
+
+2.1 Merge using array.push() method
+
+const heroes = ['Batman'];
+heroes.push('Superman');
+heroes; // ['Batman', 'Superman']
+  
+
+</pre>
