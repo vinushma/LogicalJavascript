@@ -671,3 +671,15 @@ heroes; // ['Batman', 'Superman']
   
 
 </pre>
+# Question 38  - In JavaScript
+  
+<pre>
+var a = "HELLO";
+var b = "llo";
+console.log(a-b); //NaN
+
+x = 10;
+y = "10";
+console.log(x === y); //false
+
+
