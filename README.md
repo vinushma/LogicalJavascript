@@ -681,7 +681,7 @@ console.log(a-b); //NaN
 x = 10;
 y = "10";
 console.log(x === y); //false
-
+</pre>
 # Question 37  - How to add a property at the beginning of an object in javascript
 
 <pre>
