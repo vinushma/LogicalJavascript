@@ -627,7 +627,7 @@ After Sorting = -9,-8,-2,4,6
 [ 4, 6 ]
 expected Array-9,4,-8,6,-2
 </pre>
-# Question 35  - In JavaScript, how would you count the number of each item in an array, such as ["A", "B", "C", "A", "A"].
+# Question 36  - In JavaScript, how would you count the number of each item in an array, such as ["A", "B", "C", "A", "A"].
   
 <pre>
 let x = ["A", "B", "C", "A", "A"];
@@ -646,7 +646,7 @@ Output:
 
 [ A: 3, B: 1, C: 1 ]
 </pre>
-# Question 36  - Merge Arrays in JavaScript
+# Question 37  - Merge Arrays in JavaScript
 <pre>
 1. Immutable merge of arrays
 
@@ -682,7 +682,7 @@ x = 10;
 y = "10";
 console.log(x === y); //false
 </pre>
-# Question 37  - How to add a property at the beginning of an object in javascript
+# Question 39  - How to add a property at the beginning of an object in javascript
 
 <pre>
 1. Using Object.assign:
