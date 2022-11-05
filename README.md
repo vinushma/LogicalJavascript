@@ -682,4 +682,22 @@ x = 10;
 y = "10";
 console.log(x === y); //false
 
+# Question 37  - How to add a property at the beginning of an object in javascript
 
+<pre>
+1. Using Object.assign:
+
+let obj = {'b': 2, 'c': 3};
+const returnedTarget = Object.assign({a: 1}, obj);
+
+// Object {a: 1, b: 2, c: 3}
+
+2. Using Spread Operator:
+const obj = {'b': 2, 'c': 3};
+const startAdded = {'a':1 , ...obj};
+console.log(startAdded);
+
+const endAdded = {...obj, 'd':4};
+console.log(endAdded);
+
+</pre>
