@@ -701,3 +701,16 @@ const endAdded = {...obj, 'd':4};
 console.log(endAdded);
 
 </pre>
+#Question 40 - Logical - Immediately Invoked Function
+
+var x = { foo : 1};
+var output = (function() {
+  delete x.foo;
+  return x.foo;
+})();
+console.log(output);
+
+Output:
+
+undefined
+</pre>
