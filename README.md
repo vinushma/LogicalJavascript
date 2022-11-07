@@ -288,9 +288,17 @@ Output:
 let x = ["Sameer","Sagar", "Rahul", ["Vinushma"] ,"Sachin"]
 console.log(x.flat());
 
+let x = [[1,2],[3,4],[[5,7]]];
+let y = x.flat();
+console.log(y.flat(Infinity));
+
+
 Output:
 
 [ 'Sameer', 'Sagar', 'Rahul', 'Vinushma', 'Sachin' ]
+
+[ 1, 2, 3, 4, 5, 7 ]
+
 </pre>
 # Question 18  - Let - logical (Hoisting not applicable for Let & Const)
 <pre>
