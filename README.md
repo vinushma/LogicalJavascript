@@ -710,7 +710,7 @@ console.log(endAdded);
 
 </pre>
 #Question 40 - Logical - Immediately Invoked Function
-
+<pre>
 var x = { foo : 1};
 var output = (function() {
   delete x.foo;
