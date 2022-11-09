@@ -722,3 +722,13 @@ Output:
 
 undefined
 </pre>
+#Question 41 - Remove Duplicates from the Array using filter
+<pre>
+const numbers = [1, 2, 3, 2, 4, 5, 5, 6];
+const duplicates = numbers.filter((item, index) => index !== numbers.indexOf(item));
+console.log(duplicates);
+
+Output:
+
+[ 2, 5 ]
+</pre>
