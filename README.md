@@ -709,7 +709,7 @@ const endAdded = {...obj, 'd':4};
 console.log(endAdded);
 
 </pre>
-#Question 40 - Logical - Immediately Invoked Function
+# Question 40 - Logical - Immediately Invoked Function
 <pre>
 var x = { foo : 1};
 var output = (function() {
@@ -722,7 +722,7 @@ Output:
 
 undefined
 </pre>
-#Question 41 - Remove Duplicates from the Array using filter
+# Question 41 - Remove Duplicates from the Array using filter
 <pre>
 const numbers = [1, 2, 3, 2, 4, 5, 5, 6];
 const duplicates = numbers.filter((item, index) => index !== numbers.indexOf(item));
