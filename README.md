@@ -732,3 +732,23 @@ Output:
 
 [ 2, 5 ]
 </pre>
+# Question 42 - Find the count of substrings in the given string
+<pre>
+let x = "Appleman manvinu man vinu";
+let y = "vinu";
+
+findString(x,y);
+
+function findString(x,y){
+    let z = x.split(' ');
+  var count = 0;
+  for(let i=0; i < z.length;i++){
+    if(z[i].includes(y)){
+      z[i].includes(y)
+      count ++;
+    }
+
+  }
+ console.log(count);
+ }
+</pre>
