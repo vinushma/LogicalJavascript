@@ -751,4 +751,8 @@ function findString(x,y){
   }
  console.log(count);
  }
+ 
+ Output:
+
+2
 </pre>
