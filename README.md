@@ -756,3 +756,15 @@ function findString(x,y){
 
 2
 </pre>
+# Question 43 - SIEMENS Logical
+<pre>
+ var func = function func() { 
+    console.log(func === func); 
+ }; 
+ func();
+Ans : true
+
+Number("1") - 1 == 0; // true
+
+(true + false) > 2 + true;   // false
+</pre>
