@@ -587,8 +587,7 @@ Output:
 [ 0, 1, 5, 12, 19, 20 ]
 </pre>
 
-# Question 35  - The number of positive integers and negative integers may not be equal.
-In such cases, add the extra integers at the end.
+# Question 35  - The number of positive integers and negative integers may not be equal.In such cases, add the extra integers at the end.
 
 <pre>
 
