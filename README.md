@@ -604,8 +604,8 @@ console.log("After Sorting = "+ y);
 let neg = [];
 let pos = [];
 let newArr = [];
-for(let i=0;i<x.length;i++){
-  if(x[i]>=0){
+for(let i= 0; i< x.length; i++){
+  if(x[i] >= 0){
     pos.push(x[i]);
   }else{
     neg.push(x[i]);
