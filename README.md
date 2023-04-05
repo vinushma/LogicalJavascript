@@ -586,13 +586,13 @@ console.log(otp);
 Output:
 [ 0, 1, 5, 12, 19, 20 ]
 </pre>
-<pre>
+
 # Question 35  - The number of positive integers and negative integers may not be equal.
 In such cases, add the extra integers at the end.
 
-</pre>
-For Example: 
 <pre>
+
+For Example: 
 For array {4, -9, -2, 6, -8}, the output will be {-9, 4, -2, 6, -8} 
 For array {1, 2, 3, -5}, the output will be {-5, 1, 2, 3}
 </pre>
