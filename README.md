@@ -768,3 +768,29 @@ Number("1") - 1 == 0; // true
 
 (true + false) > 2 + true;   // false
 </pre>
+# Question 44 - Get the count of elements with difference 2 in an array of numbers in Javascript
+let x = [1,2,4,6,2,5,8,6];
+//otp = [no of elements with difference 2]
+<pre>
+let x = [1,2,3,4,6,8,10];
+var count= 0;
+var newArr = [];
+function compareNumbers(arr){
+  for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+      if(arr[i] - arr[j] == 2 || arr[j] - arr[i] == 2){
+        newArr.push([arr[i],arr[j]])
+        count++;
+      }
+    }
+  }
+};
+
+compareNumbers(x);
+console.log(count);
+console.log(newArr);
+ Output:
+
+5
+[ [ 1, 3 ], [ 2, 4 ], [ 4, 6 ], [ 6, 8 ], [ 8, 10 ] ]
+</pre>
