@@ -776,8 +776,8 @@ let x = [1,2,3,4,6,8,10];
 var count= 0;
 var newArr = [];
 function compareNumbers(arr){
-  for(let i=0;i<arr.length;i++){
-    for(let j=i+1;j<arr.length;j++){
+  for(let i=0 ; i < arr.length; i++){
+    for(let j=i+1; j < arr.length; j++){
       if(arr[i] - arr[j] == 2 || arr[j] - arr[i] == 2){
         newArr.push([arr[i],arr[j]])
         count++;
