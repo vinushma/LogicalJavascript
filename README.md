@@ -789,7 +789,9 @@ function compareNumbers(arr){
 compareNumbers(x);
 console.log(count);
 console.log(newArr);
- Output:
+
+
+Output:
 
 5
 [ [ 1, 3 ], [ 2, 4 ], [ 4, 6 ], [ 6, 8 ], [ 8, 10 ] ]
