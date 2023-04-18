@@ -796,3 +796,35 @@ Output:
 5
 [ [ 1, 3 ], [ 2, 4 ], [ 4, 6 ], [ 6, 8 ], [ 8, 10 ] ]
 </pre>
+# Q.45 The following Input given , expected output?
+<pre>
+let x =  [{
+    name: "Chetan",
+    dept: "invoice",
+    service: "adm1"
+}, {
+    name: "Hari",
+    dept: "billing",
+    service: "adm2"
+}, {
+    name: "Ram",
+    dept: "IT",
+    service: "adm2"
+}];
+
+Otp:
+{ adm1: [ 'Chetan' ], adm2: [ 'Hari', 'Ram' ] }
+
+let otp = {};
+
+x.map((data)=>{
+  if(otp[data.service]){
+    otp[data.service].push(data.name);
+  }else{
+     otp[data.service] = [data.name]
+  }
+  console.log(data.name);
+});
+console.log(otp);
+</pre>
+
