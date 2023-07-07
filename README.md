@@ -827,4 +827,40 @@ x.map((data)=>{
 });
 console.log(otp);
 </pre>
+# Q.46 The following Input given , expected output?
+<pre>
+	let x = [
+  {id:1, type:"ADD"},
+  {id:1, type:"CHANGE"},
+  {id:2, type:"ADD"},
+  {id:2, type:"CHANGE"},
+  {id:2, type:"REMOVE"},
+  {id:3, type:"ADD"},
+  {id:3, type:"MINUS"},
+  {id:3, type:"REMOVE"},
+  ];
+  
+let otp = [];
+ x.map((data)=>{
+  if(otp.some(a => a.id == data.id)){
+    otp.filter((k)=> {
+      if(k.id == data.id)
+      {
+        k.type.push(data.type)
+      }
+    });
+  }else{
+     otp.push({id:data.id, type: [data.type]})
+  }
+});
+  console.log(otp);
 
+Output:
+
+[
+  { id: 1, type: [ 'ADD', 'CHANGE' ] },
+  { id: 2, type: [ 'ADD', 'CHANGE', 'REMOVE' ] },
+  { id: 3, type: [ 'ADD', 'MINUS', 'REMOVE' ] }
+]
+
+</pre>
