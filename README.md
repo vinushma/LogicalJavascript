@@ -864,3 +864,16 @@ Output:
 ]
 
 </pre>
+# Q.47 - Output of following
+<pre>
+console.log(1+"2"+"2"); // 122
+console.log(1+ +"2"+"2"); // 32
+console.log(1+ -"2"+"2"); // -12
+console.log(+"1"+"2"+"2"); // 122
+console.log("A"-"B"+"2"); //NaN2
+console.log("A"-"B"+2); //NaN
+console.log("A"-"B"-2); // NaN
+console.log("5"+"5"-2); //23
+console.log("5"-"1"-2); // 2
+
+</pre>
