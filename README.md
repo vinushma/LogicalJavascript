@@ -907,7 +907,7 @@ let k = counter();
 k();
 k();	
 </pre>
-#49. What is the output?
+# 49. What is the output?
 <pre>
 	let x = 1;
 if(function f(){}){
