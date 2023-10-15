@@ -877,7 +877,7 @@ console.log("5"+"5"-2); //23
 console.log("5"-"1"-2); // 2
 
 </pre>
-#Q48 - The below code snippet uses closures to implement a counter. How will you optimize it to minimize memory usage:
+# Q48 - The below code snippet uses closures to implement a counter. How will you optimize it to minimize memory usage:
 <pre>
 function counter() {
   let count = 0;
@@ -891,8 +891,8 @@ increment(); // 1
 increment(); // 2
 increment(); // 3	
 </pre>
+# clousure
 <pre>
-
 function counter() {
   let count = 0;
   function calc() {
