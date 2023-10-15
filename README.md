@@ -907,6 +907,17 @@ let k = counter();
 k();
 k();	
 </pre>
+#49. What is the output?
+<pre>
+	let x = 1;
+if(function f(){}){
+  x+= typeof f;
+}
+console.log(x)
 
+Output:
+1
+undefined
+</pre>
 
 
