@@ -919,5 +919,44 @@ Output:
 1
 undefined
 </pre>
+# 50. Logical Javascript
+<pre>
+1. //If null or undefined it return the Default values - Nullfing colesing operator
+	
+let message ;
+let x = message ?? 'Default Value';
+console.log(x)
+
+2. // Spread Operator -deep cloning & merging arrays/Objects
+let x1 = [1,2,3];
+let x2 = [3,5,6];
+let y = [...x1,...x2];
+console.log(y);//[1, 2, 3, 3, 5, 6]
+
+let r1 = {
+  name: 'vinu',
+  age: 30
+}
+let r2 ={
+   sub: 'apple',
+  marks: 31
+}
+let h = {...r1, ...r2}
+console.log(h) // {name: "vinu", age: 30, sub: "apple", marks: 31}
+
+3. // Destructuring
+let x1 = [1,2,3];
+let [x,y,z] = x1;
+
+console.log(y);//2
+
+let r1 = {
+  name: 'vinu',
+  age: 30
+}
+let {name:Name,age:Age} = r1
+console.log(Name);// vinu
+	
+</pre>
 
 
