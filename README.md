@@ -958,5 +958,17 @@ let {name:Name,age:Age} = r1
 console.log(Name);// vinu
 	
 </pre>
+# 51. First Class Functions
+<pre>
+let add = (a,b)=> a+b;
+funtion calculate(add,a,b){
+    
+    return add(a,b)
+}
+calculate(add,1,2);
+
+output:
+3
+</pre>
 
 
