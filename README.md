@@ -970,5 +970,16 @@ calculate(add,1,2);
 output:
 3
 </pre>
+# 52 . Find the outputs
+<pre>
+let x = '{"b":3,"c":4}';
+let y = JSON.parse(x);
+console.log(typeof y) // Object
 
+let x = {b:3,c:4};
+let y = JSON.stringify(x);
+console.log(typeof y) // String
+
+
+</pre>
 
