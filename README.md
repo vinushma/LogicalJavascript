@@ -982,14 +982,11 @@ console.log(typeof y) // String
 </pre>
 # 53. IBM - compare two objects,get the keys with same values in javascript
 <pre>
-	let objA = { a: 1, b: 2, c: 3, d: 5 };
+let objA = { a: 1, b: 2, c: 3, d: 5 };
 let objB = { b: 1, b: 4, c: 3, d : 6 };
 var output = [];
 function find(objA,objB){
-  
   for(let i in objA){
-    console.log(i);
-    
     if(objA.hasOwnProperty(i) === objB.hasOwnProperty(i)){
       
       if(objA[i] != objB[i]){
@@ -1004,5 +1001,18 @@ find(objA,objB);
 Output:
 
 [ 'b', 'd' ]
+</pre>
+# 54. Logical const
+<pre>
+const prop = "foo";
+const obj = {
+  [prop]: 123,
+  prop : 456
+}
+console.log(obj.foo,obj.prop)
+	
+Output:
+
+123 456
 </pre>
 
