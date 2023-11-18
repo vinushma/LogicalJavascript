@@ -979,7 +979,30 @@ console.log(typeof y) // Object
 let x = {b:3,c:4};
 let y = JSON.stringify(x);
 console.log(typeof y) // String
+</pre>
+# 53. IBM - compare two objects,get the keys with same values in javascript
+<pre>
+	let objA = { a: 1, b: 2, c: 3, d: 5 };
+let objB = { b: 1, b: 4, c: 3, d : 6 };
+var output = [];
+function find(objA,objB){
+  
+  for(let i in objA){
+    console.log(i);
+    
+    if(objA.hasOwnProperty(i) === objB.hasOwnProperty(i)){
+      
+      if(objA[i] != objB[i]){
+        output.push(i)
+      }
+    }
+  }
+  return console.log(output);
+}
 
+find(objA,objB);
+Output:
 
+[ 'b', 'd' ]
 </pre>
 
