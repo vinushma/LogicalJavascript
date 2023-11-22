@@ -439,7 +439,7 @@ Output:
 onecmpilr
 oe
 </pre>
-# Question 26  - sum(2)(3) and sum(2, 3) what is the common solution for both
+# Question 26  - sum(2)(3) and sum(2, 3) what is the common solution for both - Currying
 
 <pre>
 console.log(sum(1)(2));
@@ -459,6 +459,28 @@ Output:
 
 3
 3
+</pre>
+# Currying - Use case - reusable variables and operations 
+<pre>
+function sum(a,b){
+	return a+b;
+}
+function mul(a,b){
+	return a*b;
+}
+function calc(operation){
+
+	return function(x){
+		return function(y){
+			return operation(x,y);
+		}
+	}
+}
+let k = calc(sum);
+console.log(k(2)(3));
+let y = calc(mul);
+console.log(y(5)(2))
+
 </pre>
 # Question 27  - Two Strings Are Anagrams of Each Other, Input: SILENT, LISTEN
 //Create a function that takes in two strings as two parameters and returns a boolean that indicates whether or not the first string is an anagram of the second string.
