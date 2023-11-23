@@ -1037,7 +1037,7 @@ Output:
 
 123 456
 </pre>
-#55. Factorial of a number in recursive
+# 55. Factorial of a number in recursive
 <pre>
 function factorial(num){
   
