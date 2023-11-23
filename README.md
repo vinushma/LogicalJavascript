@@ -1037,4 +1037,19 @@ Output:
 
 123 456
 </pre>
+#55. Factorial of a number in recursive
+<pre>
+function factorial(num){
+  
+  if(num == 1 || num == 0){
+    return 1;
+  }
+  
+  return num * factorial(num-1)
+}
+console.log(factorial(5))
+	
+Output:
 
+120
+</pre>
