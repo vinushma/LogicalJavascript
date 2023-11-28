@@ -1053,3 +1053,24 @@ Output:
 
 120
 </pre>
+# 56. When comparing the Non- Primitive data types(Reference types it throws false even if we compare same values, since both the arrays/object references are different)
+<pre>
+1. console.log([] === []);
+let a = [1,2,3];
+let b = [1,2,3];
+2. console.log(a === b);
+let x = {
+  age:20
+}
+
+let y = {
+  age:20
+}
+3. console.log(x === y);
+
+Output:
+
+false
+false
+false
+</pre>
