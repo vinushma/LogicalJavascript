@@ -1074,3 +1074,40 @@ false
 false
 false
 </pre>
+# 57. Logical
+<pre>
+let x = 10;
+let y = '5';
+console.log(x + + y); //15
+</pre>
+# 58. Deleting Array values using delete method 
+<pre>
+let x = [1,2,3,4];
+delete x[0];
+console.log(x)
+	
+Output
+
+[ <1 empty item>, 2, 3, 4 ]
+</pre>
+# 59 . Array Rotate
+<pre>
+let x = [1,2,3];
+let y  = x.shift();
+x.push(y)
+console.log(x)
+
+Output
+[ 2, 3, 1 ]
+</pre>
+# 60. Immediately Invoked Logical Function
+<pre>
+let str = "hello";
+( function (s) {
+ s = "world";
+ console.log(s)
+} )(str);
+
+Output
+World
+</pre>
