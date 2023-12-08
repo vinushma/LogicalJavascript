@@ -1174,3 +1174,102 @@ const twoSum = (nums, target) => {
   return undefined;
 }
 </pre></div>
+# 62 Find the Salary less than 100000 , in a object with nesed object
+<pre class="highlight plaintext"><code>
+const employeesData = [
+  {
+    id: 1,
+    name: 'John Doe',
+    position: 'CEO',
+    salary: 1000000,
+    reportees: [
+      {
+        id: 2,
+        name: 'Alice Smith',
+        position: 'CTO',
+        salary: 800000,
+        reportees: [
+          {
+            id: 3,
+            name: 'Bob Johnson',
+            position: 'Senior Developer',
+            salary: 120000,
+            reportees: []
+          },
+          {
+            id: 4,
+            name: 'Eva Brown',
+            position: 'Senior Developer',
+            salary: 120000,
+            reportees: [
+              {
+                id: 5,
+                name: 'Charlie White',
+                position: 'Developer',
+                salary: 90000,
+                reportees: []
+              },
+              {
+                id: 6,
+                name: 'Grace Miller',
+                position: 'Developer',
+                salary: 90000,
+                reportees: []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: 'David Wilson',
+        position: 'CFO',
+        salary: 900000,
+        reportees: [
+          {
+            id: 8,
+            name: 'Frank Davis',
+            position: 'Financial Analyst',
+            salary: 110000,
+            reportees: [
+              {
+                id: 10,
+                name: 'Ivy Green',
+                position: 'Junior Financial Analyst',
+                salary: 80000,
+                reportees: []
+              }
+            ]
+          },
+          {
+            id: 9,
+            name: 'Helen Wilson',
+            position: 'Accountant',
+            salary: 95000,
+            reportees: []
+          }
+        ]
+      }
+    ]
+  }
+];
+
+#Solution: using recursive method
+let salAarr = [];
+function getSal(employeesData){
+    for(let x of employeesData){
+          if(x.salary < 100000){
+            salAarr.push(x.name)
+          }
+          if(x.reportees.length > 0){
+              getSal(x.reportees)
+          } 
+    }
+}
+getSal(employeesData);
+console.log(salAarr)
+</code></pre>
+<div>
+ # Output <pre>
+[ 'Charlie White', 'Grace Miller', 'Ivy Green', 'Helen Wilson' ]
+</pre></div>
