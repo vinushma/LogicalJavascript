@@ -1273,3 +1273,21 @@ console.log(salAarr)
  # Output <pre>
 [ 'Charlie White', 'Grace Miller', 'Ivy Green', 'Helen Wilson' ]
 </pre></div>
+
+# 64. Find Output
+<pre>
+let a=6;
+{
+    var a = 5;
+    console.log(a);
+}
+console.log(a);
+	
+output:
+ERROR!
+Identifier 'a' has already been declared
+</pre>
+# 65. Find Output
+null == false // false
+null == undefined // true
+undefined == false // false
