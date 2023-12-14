@@ -1288,6 +1288,8 @@ ERROR!
 Identifier 'a' has already been declared
 </pre>
 # 65. Find Output
+<pre>
 null == false // false
 null == undefined // true
 undefined == false // false
+</pre>
