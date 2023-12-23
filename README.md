@@ -1293,3 +1293,21 @@ null == false // false
 null == undefined // true
 undefined == false // false
 </pre>
+# Question 67 [10,'Hi',null,undefined,20] OTP: sum of numbers
+<pre class="highlight plaintext"><code>
+function sum(...args) {
+  return args
+    .filter(function (e) {
+      return typeof e === 'number';
+    })
+    .reduce(function (prev, curr) {
+      return prev + curr;
+    });
+}
+let result = sum(10,'Hi',null,undefined,20); 
+console.log(result);
+</code></pre>
+<div>
+ # Output <pre>
+30
+</pre></div>
