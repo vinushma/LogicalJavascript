@@ -1311,3 +1311,21 @@ console.log(result);
  # Output <pre>
 30
 </pre></div>
+
+# Question 68 Flatten nested array without using flat methos
+<pre>
+let scores = [80, [90,10,[20]],[15], 70];
+function flatten(a) {
+    return a.reduce((flat, i) => {
+      if (Array.isArray(i)) {
+        return flat.concat(flatten(i));
+      }
+      return flat.concat(i);
+    }, []);
+  }
+let x = flatten(scores);
+console.log(x)</pre>
+ #Output
+ <pre>
+[ 80, 90, 10, 20, 15, 70 ]
+</pre>
