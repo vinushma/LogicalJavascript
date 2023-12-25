@@ -1329,3 +1329,25 @@ console.log(x)</pre>
  <pre>
 [ 80, 90, 10, 20, 15, 70 ]
 </pre>
+# Question 69 JavaScript Logical
+<pre>
+// Split the string with mutliple , or ;
+
+const list = "apple,samsung;vivo"  ;
+let y = list.split(/[,;]/);
+console.log(y)
+
+otp:
+[ 'apple', 'samsung', 'vivo' ]
+
+// Remove all occurances of the world in the sentence.
+
+const str = "Hello world ! welcome to the world test";
+const remove = "world";
+let regx = new RegExp(remove,'gi');
+let z  = str.replace(regx,'');
+console.log(z)
+
+output:
+Hello  ! welcome to the  test
+</pre>
