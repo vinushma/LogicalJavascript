@@ -1351,3 +1351,18 @@ console.log(z)
 output:
 Hello  ! welcome to the  test
 </pre>
+# Question 70 JavaScript Logical
+<pre>
+num = 5;
+function outer(num){
+    setTimeout(()=>{
+        console.log(this.num)
+    },0);
+    num = 6;
+}
+
+outer(5)
+
+output:
+5
+</pre>
