@@ -1366,3 +1366,15 @@ outer(5)
 output:
 5
 </pre>
+# Question 70 Reverse a string without using inbuilt function
+<pre>
+let str = "vinushma";
+let newStr = "";
+for(let i=str.length-1;i>=0;i--){
+    newStr += str[i] ;
+}
+console.log(newStr);
+
+output:
+amhsuniv
+</pre>
