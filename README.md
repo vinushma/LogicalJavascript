@@ -1378,3 +1378,27 @@ console.log(newStr);
 output:
 amhsuniv
 </pre>
+# Question 71 Flatten Nested Array
+<pre>
+let arr = nestedArr = [[1], [[1, 4, [5, 3]], [1, 2, 3, [3, 4, [2, [22, [3, 4, 5, 6, 5, [2]]]]], 4]]];
+let newArr = [];
+function flatten(arr){
+    for(let i= 0;i < arr.length;i++){
+        if(Array.isArray(arr[i])){
+            flatten(arr[i])
+        }else{
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+console.log(flatten(arr));
+
+output:
+[
+  1, 1, 4, 5,  3, 1, 2,
+  3, 3, 4, 2, 22, 3, 4,
+  5, 6, 5, 2,  4
+]
+
+</pre>
