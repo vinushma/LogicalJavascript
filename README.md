@@ -1427,3 +1427,24 @@ output:
 undefined
 
 </pre>
+# Question 73 Logical Question this keyword useage
+<pre>
+const person = {
+  abc: function () {
+	  console.log(this);  // person
+  },
+  def: () => {
+    console.log(this);  // {}
+  },
+};
+
+function func() {
+     console.log(this);// global object 
+} 
+
+func();
+person.abc();
+person.def();
+
+
+</pre>
