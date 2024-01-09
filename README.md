@@ -1448,3 +1448,21 @@ person.def();
 
 
 </pre>
+# Question 74 Logical Question call
+<pre>
+const person = {
+  firstName: "Helen",
+  lastName: "Ryan",
+  getFullName: function () {
+	return this.firstName + " " + this.lastName;
+  },
+};
+
+const person2 = {
+  firstName: “Hello”,
+  lastName: "Ryan",
+};
+let k = person.getFullName.call(person2);
+console.log(k);  //Hello Ryan
+
+</pre>
