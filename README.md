@@ -1471,7 +1471,7 @@ console.log(k);  //Hello Ryan
 
 function tranform(inputValue){
     let transformedInput = '';
-        for(var i=0; i < inputValue.length; i++){
+        for(let i=0 ; i < inputValue.length;i++) {
       	    if(i == 2){
     	         transformedInput += inputValue.charAt(2).toUpperCase();
             }else{
@@ -1479,10 +1479,10 @@ function tranform(inputValue){
             }
         }
         return transformedInput;
-}
+} 
 let otp = [];
 function getUpper(k){
-    for(let i=0;i<k.length;i++){
+    for(let i=0 ;i < k.length ;i++){
        otp.push(tranform(k[i]));
     }
 }
