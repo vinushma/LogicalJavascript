@@ -1466,3 +1466,34 @@ let k = person.getFullName.call(person2);
 console.log(k);  //Hello Ryan
 
 </pre>
+# Question 75 Replace 3rd letter with capital letter in javascript array
+<pre>
+
+function tranform(inputValue){
+    let transformedInput = '';
+        for(var i=0; i < inputValue.length; i++){
+      	    if(i == 2){
+    	         transformedInput += inputValue.charAt(2).toUpperCase();
+            }else{
+                 transformedInput += inputValue[i];
+            }
+        }
+        return transformedInput;
+}
+let otp = [];
+function getUpper(k){
+    for(let i=0;i<k.length;i++){
+       otp.push(tranform(k[i]));
+    }
+}
+let inp = "Hello You are succefully got Offer";
+let k = inp.split(' ');
+getUpper(k)
+console.log(otp.join(' '))
+
+
+output:
+		
+HeLlo YoU arE suCcefully goT OfFer
+
+</pre>
