@@ -1497,3 +1497,46 @@ output:
 HeLlo YoU arE suCcefully goT OfFer
 
 </pre>
+# Question 76 Find the second largest number in the Array, without using inbuilt function
+<pre>
+const secondLargestNumber = (data) => {
+ first = data[0];
+ second = data[0];
+ for (var i = 0; i < data.length; i++) {
+   if (first < data[i]){
+     second = first;
+     first = data[i];
+   }else if (second < data[i]){
+     second = data[i];
+   }
+ }
+ console.log("Second Largest Number:",second);
+}
+
+const arr = [62,33,12,90,10,28,24];
+secondLargestNumber(arr);
+
+Output:
+
+Second Largest Number: 62
+
+
+</pre>
+# Question 77 Logical Question in Global Logic
+<pre>
+const a;
+a=3
+console.log(a) //ReferenceError
+
+	
+function block()
+{
+  var a=3
+}
+block();
+console.log(a); // a is undefined
+
+console.log('7'-7-A)// A is not defined
+
+
+</pre>
