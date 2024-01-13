@@ -1540,3 +1540,26 @@ console.log('7'-7-A)// A is not defined
 
 
 </pre>
+# Question 78 Find the largest string in the Array, without using inbuilt function
+<pre>
+
+let x = "Javascript Angular PHP React objectoriented";
+let y = x.split(' ');
+console.log(y);
+
+let length = 0;
+let longest;
+
+for(let i=0;i<y.length;i++){
+  if(y[i].length > length){
+    length = y[i].length;
+    longest = y[i];
+  }
+}
+console.log(longest);
+
+
+Output:
+
+[ 'Javascript', 'Angular', 'PHP', 'React', 'objectoriented' ]
+objectoriented
