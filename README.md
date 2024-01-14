@@ -1565,3 +1565,40 @@ Output:
 
 [ 'Javascript', 'Angular', 'PHP', 'React', 'objectoriented' ]
 objectoriented
+</pre>
+# Question 78 Find the  largest repeated count in the string
+<pre>
+//Find the  largest repeated count in the string
+
+let  x= "alletwetwtwtweyewyewyt";
+let y = x.split('');
+
+let obj = [];
+
+for(let i=0;i < y.length; i++) {
+  if(obj[y[i]]){
+    obj[y[i]] = obj[y[i]] + 1
+  }else{
+    obj[y[i]] = 1;
+  }
+}
+console.log(obj);
+let largestLetter;
+let largestCount=0;
+//console.log(Object.entries(obj));
+for (const [key, value] of Object.entries(obj)) {
+ // console.log(`${key}: ${value}`);
+  if(value > largestCount){
+    largestCount = value;
+    largestLetter = key;
+  }
+}
+
+console.log("largestLetter = "+largestLetter);
+
+
+Output:
+[ a: 1, l: 2, e: 5, t: 5, w: 6, y: 3 ]
+largestLetter = w
+largestCount = 6
+</pre>
