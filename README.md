@@ -1499,26 +1499,28 @@ HeLlo YoU arE suCcefully goT OfFer
 </pre>
 # Question 76 Find the second largest number in the Array, without using inbuilt function
 <pre>
-const secondLargestNumber = (data) => {
- first = data[0];
- second = data[0];
- for (var i = 0; i < data.length; i++) {
-   if (first < data[i]){
-     second = first;
-     first = data[i];
-   }else if (second < data[i]){
-     second = data[i];
-   }
- }
- console.log("Second Largest Number:",second);
+
+//Find the second largest number in the Array, without using inbuilt function
+
+let x = [5,4,9,1,5,3,6,10];
+let longest = 0;
+let secondLongest;
+
+for(let i=0;i<x.length;i++){
+  if(x[i]> longest){
+    secondLongest = longest;
+    longest = x[i]
+  }
 }
 
-const arr = [62,33,12,90,10,28,24];
-secondLargestNumber(arr);
+console.log(longest);
+console.log(secondLongest)
+
 
 Output:
 
-Second Largest Number: 62
+10
+9
 
 
 </pre>
