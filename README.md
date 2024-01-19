@@ -1602,3 +1602,12 @@ Output:
 largestLetter = w
 largestCount = 6
 </pre>
+# 79. Find Output - L& T
+<pre>
+//let x = 'Hello' || false;
+console.log('Hello' || false) // Hello
+ //var y = false || 'Yes' || 1;
+console.log(false || 'Yes' || 1) // Yes
+ //let z = false || undefined || 0;
+console.log(false || undefined || 0) // 0
+</pre>
